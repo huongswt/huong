@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0d12" />
+  <meta name="description" content="Arc Creator Agent — agents commission, humans create, USDC settles on Arc." />
+  <title>Arc Creator Agent</title>
+  <style>
+    :root{--bg:#080a0e;--panel:#10131a;--panel2:#151922;--line:#252a35;--text:#f6f7fb;--muted:#9299a8;--accent:#7dffbf;--accent2:#8ba7ff;--danger:#ff8b8b;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 0%,#172038 0,transparent 33%),radial-gradient(circle at 10% 20%,#103125 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}.wrap{max-width:var(--max);margin:auto;padding:0 22px}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.topbar{position:sticky;top:0;z-index:20;background:rgba(8,10,14,.8);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em}.logo{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#07110d;background:linear-gradient(135deg,var(--accent),#d4ffe9);font-weight:900}.navActions{display:flex;gap:10px;align-items:center}.pill,.btn{border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:rgba(255,255,255,.03);color:var(--text)}.pill{font-size:13px;color:#c4cad5}.btn{cursor:pointer;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-1px);border-color:#404758}.btn.primary{background:var(--accent);color:#06110c;border-color:transparent}.btn.blue{background:#1a2440;border-color:#35446d;color:#dbe5ff}.hero{padding:86px 0 58px;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:end}.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--accent);font-weight:800;margin-bottom:20px}.hero h1{font-size:clamp(48px,7vw,92px);line-height:.93;letter-spacing:-.065em;margin:0;max-width:880px}.hero h1 span{color:var(--accent)}.hero p{font-size:18px;line-height:1.6;color:#b2b8c5;max-width:640px;margin:28px 0 0}.heroSide{border-left:1px solid var(--line);padding-left:28px}.metric{padding:17px 0;border-bottom:1px solid var(--line)}.metric strong{display:block;font-size:22px}.metric span{color:var(--muted);font-size:13px}.section{padding:58px 0}.sectionHead{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:24px}.sectionHead h2{font-size:30px;letter-spacing:-.04em;margin:0}.sectionHead p{color:var(--muted);margin:0}.grid4,.grid3,.grid2{display:grid;gap:14px}.grid4{grid-template-columns:repeat(4,1fr)}.grid3{grid-template-columns:repeat(3,1fr)}.grid2{grid-template-columns:repeat(2,1fr)}.card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:22px;padding:22px}.card b.num{font-size:12px;color:var(--accent);letter-spacing:.12em}.card h3{font-size:20px;margin:22px 0 8px}.card p{color:var(--muted);line-height:1.55;margin:0}.creator{min-height:250px;display:flex;flex-direction:column;justify-content:space-between}.creatorTop{display:flex;justify-content:space-between;align-items:flex-start}.avatar{height:52px;width:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#27324f,#152a22);font-weight:900}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.1em;border:1px solid var(--line);border-radius:999px;padding:7px 9px;color:#b6bdc9}.creator strong{font-size:26px;letter-spacing:-.04em}.creator small{color:var(--muted)}.console{display:grid;grid-template-columns:.95fr 1.05fr;gap:16px}.panel{background:#0d1016;border:1px solid var(--line);border-radius:24px;padding:24px}.panel h3{font-size:23px;margin:0 0 7px}.panel .sub{color:var(--muted);font-size:14px;line-height:1.5;margin:0 0 22px}.field{display:grid;gap:8px;margin:14px 0}.field label{font-size:12px;color:#aab1bd;font-weight:700}.field input,.field textarea{width:100%;border:1px solid #2c3240;border-radius:12px;background:#111620;color:var(--text);padding:12px 13px;outline:none}.field input:focus,.field textarea:focus{border-color:#62749f}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}.status{padding:13px;border:1px solid var(--line);background:#0a0d12;border-radius:12px;color:#bfc6d2;font-size:13px;line-height:1.5;word-break:break-word}.status.ok{border-color:#24563f;color:#bfffe0}.status.err{border-color:#5b2f36;color:#ffd1d1}.row{display:flex;gap:10px;flex-wrap:wrap}.code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#aab1bd;word-break:break-all}.flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.node{padding:12px 15px;border:1px solid var(--line);border-radius:12px;background:#10141c}.arrow{color:var(--accent)}.proof{margin-top:16px;padding:15px;border:1px dashed #374051;border-radius:14px;background:#0a0d12}.proof strong{display:block;margin-bottom:5px}.foot{padding:42px 0 70px;border-top:1px solid var(--line);color:#858d9c;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.notice{padding:14px 16px;border:1px solid #3a443a;background:#111912;border-radius:14px;color:#bde7c9;font-size:13px;line-height:1.55;margin-bottom:16px}.links{display:flex;gap:10px;flex-wrap:wrap}.link{font-size:13px;color:#b8c8ff;border-bottom:1px solid #46577f}.live{display:inline-flex;align-items:center;gap:7px}.dot{height:8px;width:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px rgba(125,255,191,.08)}
+    @media(max-width:900px){.hero,.console{grid-template-columns:1fr}.heroSide{border-left:0;padding:0}.grid4{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr}.hero{padding-top:58px}.navActions .pill{display:none}}
+    @media(max-width:600px){.grid4,.grid2,.split{grid-template-columns:1fr}.hero h1{font-size:54px}.sectionHead{align-items:flex-start;flex-direction:column}.brand span:last-child{display:none}}
+  </style>
+</head>
+<body>
+<header class="topbar"><div class="wrap"><nav>
+  <a class="brand" href="#top"><span class="logo">A</span><span>Arc Creator Agent</span></a>
+  <div class="navActions"><span class="pill"><span class="live"><i class="dot"></i> Arc Testnet · 5042002</span></span><button class="btn primary" id="connectBtn">Connect wallet</button></div>
+</nav></div></header>
+<main id="top">
+  <section class="wrap hero">
+    <div><div class="eyebrow">AGENT → HUMAN CREATIVE ECONOMY</div><h1>Agents commission.<br><span>Humans create.</span><br>USDC settles.</h1><p>A programmable marketplace where autonomous buyers can commission human illustration, motion and video work, while Arc provides transparent USDC escrow and settlement.</p></div>
+    <aside class="heroSide"><div class="metric"><strong>USDC</strong><span>native gas + settlement asset</span></div><div class="metric"><strong>Arc</strong><span>stablecoin-native execution layer</span></div><div class="metric"><strong>5%</strong><span>demo marketplace fee</span></div><div class="metric"><strong>Human-first</strong><span>agents buy creativity — not replace it</span></div></aside>
+  </section>
+
+  <section class="wrap section"><div class="sectionHead"><h2>One clean payment loop</h2><p>Quality of execution over unnecessary complexity.</p></div><div class="grid4">
+    <article class="card"><b class="num">01 · COMMISSION</b><h3>Agent finds talent</h3><p>A buyer or bounded AI agent selects a creator, budget and deadline.</p></article>
+    <article class="card"><b class="num">02 · ESCROW</b><h3>USDC is locked</h3><p>The buyer approves USDC and funds the job contract on Arc.</p></article>
+    <article class="card"><b class="num">03 · CREATE</b><h3>Human delivers</h3><p>The creator accepts the brief and submits a content URI or proof hash.</p></article>
+    <article class="card"><b class="num">04 · SETTLE</b><h3>Approve and pay</h3><p>Approval releases creator payment and the marketplace fee atomically.</p></article>
+  </div></section>
+
+  <section class="wrap section"><div class="sectionHead"><h2>Creator network</h2><p>Demo profiles for the hackathon prototype.</p></div><div class="grid3">
+    <article class="card creator"><div class="creatorTop"><div class="avatar">MI</div><span class="tag">Illustration</span></div><div><h3>Mira Ink</h3><p>Editorial illustration, protocol worlds, launch key visuals.</p></div><div><strong>25 USDC</strong><br><small>starting commission</small></div></article>
+    <article class="card creator"><div class="creatorTop"><div class="avatar">VN</div><span class="tag">Motion</span></div><div><h3>Vector North</h3><p>Motion systems, short protocol teasers and social loops.</p></div><div><strong>60 USDC</strong><br><small>starting commission</small></div></article>
+    <article class="card creator"><div class="creatorTop"><div class="avatar">LS</div><span class="tag">Video</span></div><div><h3>Loop Studio</h3><p>Creator stories, explainers and short-form campaign video.</p></div><div><strong>90 USDC</strong><br><small>starting commission</small></div></article>
+  </div></section>
+
+  <section class="wrap section"><div class="sectionHead"><h2>Live Arc console</h2><p>Real wallet calls — no seed phrase leaves your wallet.</p></div>
+    <div class="notice"><strong>Hackathon mode:</strong> set the deployed CreativeEscrow address once, then this page can approve USDC, fund a job, accept it, submit work and approve settlement on Arc Testnet.</div>
+    <div class="console">
+      <section class="panel"><h3>1. Configure contract</h3><p class="sub">The contract address is public. It is stored only in this browser.</p>
+        <div class="field"><label>CreativeEscrow address</label><input id="escrowAddress" placeholder="0x…" /></div>
+        <div class="row"><button class="btn blue" id="saveContractBtn">Save contract</button><a class="btn" href="https://testnet.arcscan.app" target="_blank" rel="noreferrer">Open ArcScan ↗</a></div>
+        <div class="proof"><strong>Canonical Arc Testnet USDC</strong><span class="code">0x3600000000000000000000000000000000000000</span></div>
+        <div class="proof"><strong>Connected wallet</strong><span class="code" id="walletText">Not connected</span></div>
+        <div class="proof"><strong>Wallet balance</strong><span id="balanceText">—</span></div>
+      </section>
+
+      <section class="panel"><h3>2. Fund a creative job</h3><p class="sub">Two transactions: approve canonical USDC, then transfer it into escrow.</p>
+        <form id="createForm">
+          <div class="field"><label>Creator wallet</label><input name="creator" required pattern="0x[a-fA-F0-9]{40}" placeholder="0x…" /></div>
+          <div class="split"><div class="field"><label>Budget (USDC)</label><input name="amount" type="number" min="0.01" step="0.01" value="2" required /></div><div class="field"><label>Deadline (days)</label><input name="days" type="number" min="1" max="30" value="7" required /></div></div>
+          <div class="field"><label>Creative brief / metadata URI</label><textarea name="brief" rows="4" required>Create a 16:9 key visual for Arc Creator Agent. Human-made final artwork, modern Arc identity, deadline 7 days.</textarea></div>
+          <button class="btn primary" type="submit">Approve + fund USDC</button>
+        </form>
+      </section>
+    </div>
+  </section>
+
+  <section class="wrap section"><div class="sectionHead"><h2>Creator & buyer actions</h2><p>Complete the whole escrow lifecycle.</p></div><div class="grid2">
+    <section class="panel"><h3>Creator actions</h3><p class="sub">Use the creator wallet selected when the job was funded.</p><div class="field"><label>Job ID</label><input id="creatorJobId" type="number" min="1" value="1" /></div><div class="field"><label>Deliverable URI / content hash</label><input id="deliverable" value="ipfs://demo-arc-creator-deliverable" /></div><div class="row"><button class="btn" id="acceptBtn">Accept job</button><button class="btn blue" id="submitBtn">Submit work</button><button class="btn" id="disputeCreatorBtn">Raise dispute</button></div></section>
+    <section class="panel"><h3>Buyer actions</h3><p class="sub">Use the buyer wallet that funded the job.</p><div class="field"><label>Job ID</label><input id="buyerJobId" type="number" min="1" value="1" /></div><div class="row"><button class="btn primary" id="approveBtn">Approve + release</button><button class="btn" id="disputeBuyerBtn">Raise dispute</button><button class="btn blue" id="readBtn">Read job</button></div><div class="proof" id="jobReadout"><strong>Job state</strong><span class="code">Read a funded job to inspect onchain state.</span></div></section>
+  </div><div id="status" class="status" style="margin-top:16px">Ready. Connect a wallet on Arc Testnet.</div></section>
+
+  <section class="wrap section"><div class="sectionHead"><h2>Agentic expansion</h2><p>What makes this more than “Fiverr + crypto”.</p></div><div class="card"><div class="flow"><span class="node">Brand budget</span><span class="arrow">→</span><span class="node">Circle Agent Wallet</span><span class="arrow">→</span><span class="node">Human creator</span><span class="arrow">→</span><span class="node">Creative proof</span><span class="arrow">→</span><span class="node">USDC settlement on Arc</span></div><p style="margin-top:18px">Next milestone: a bounded agent receives a spend policy, discovers matching creators and creates commissions autonomously. Human or dispute logic remains responsible for subjective creative approval.</p></div></section>
+</main>
+<footer class="wrap foot"><span>Arc Creator Agent · Agentic Track</span><div class="links"><a class="link" href="https://github.com/huongswt/huong" target="_blank" rel="noreferrer">GitHub</a><a class="link" href="https://community.arc.io/public/events/hackathon-programmable-money-74llz8htis" target="_blank" rel="noreferrer">Arc Hackathon</a><a class="link" href="https://faucet.circle.com" target="_blank" rel="noreferrer">Circle Faucet</a></div></footer>
+
+<script type="module">
+import { BrowserProvider, Contract, formatUnits, parseUnits } from "https://cdn.jsdelivr.net/npm/ethers@6.15.0/+esm";
+
+const ARC_CHAIN_ID_DEC = 5042002;
+const ARC_CHAIN_ID = "0x4cef52";
+const RPC = "https://rpc.testnet.arc.network";
+const EXPLORER = "https://testnet.arcscan.app";
+const USDC = "0x3600000000000000000000000000000000000000";
+const STATUS_NAMES = ["None","Funded","Accepted","Submitted","Completed","Disputed","Refunded"];
+const escrowAbi = [
+  "function createJob(address creator,uint256 amount,uint64 deadline,string metadataURI) returns (uint256)",
+  "function acceptJob(uint256 jobId)",
+  "function submitWork(uint256 jobId,string deliverableURI)",
+  "function approveWork(uint256 jobId)",
+  "function raiseDispute(uint256 jobId)",
+  "function refundExpired(uint256 jobId)",
+  "function nextJobId() view returns (uint256)",
+  "function jobs(uint256) view returns (address buyer,address creator,uint256 amount,uint64 deadline,string metadataURI,string deliverableURI,uint8 status)",
+  "event JobCreated(uint256 indexed jobId,address indexed buyer,address indexed creator,uint256 amount,uint64 deadline,string metadataURI)"
+];
+const erc20Abi = ["function approve(address spender,uint256 amount) returns (bool)","function balanceOf(address owner) view returns (uint256)"];
+
+let provider, signer, account;
+const $ = (id) => document.getElementById(id);
+const statusEl = $("status");
+function setStatus(text,type=""){statusEl.textContent=text;statusEl.className=`status ${type}`;}
+function short(a){return a?`${a.slice(0,6)}…${a.slice(-4)}`:""}
+function contractAddress(){return localStorage.getItem("arcCreatorEscrow") || ""}
+function requireContract(){const a=contractAddress();if(!/^0x[a-fA-F0-9]{40}$/.test(a))throw new Error("Set and save a valid CreativeEscrow address first.");return a}
+async function ensureConnected(){if(!window.ethereum)throw new Error("Install MetaMask or another EVM wallet.");if(!signer)await connect();return signer}
+
+async function connect(){
+  if(!window.ethereum){setStatus("No EVM wallet detected. Install MetaMask first.","err");return}
+  try{
+    const current=await window.ethereum.request({method:"eth_chainId"});
+    if(current.toLowerCase()!==ARC_CHAIN_ID){
+      try{await window.ethereum.request({method:"wallet_switchEthereumChain",params:[{chainId:ARC_CHAIN_ID}]});}
+      catch{await window.ethereum.request({method:"wallet_addEthereumChain",params:[{chainId:ARC_CHAIN_ID,chainName:"Arc Testnet",nativeCurrency:{name:"USDC",symbol:"USDC",decimals:6},rpcUrls:[RPC],blockExplorerUrls:[EXPLORER]}]});}
+    }
+    provider=new BrowserProvider(window.ethereum,"any");signer=await provider.getSigner();account=await signer.getAddress();
+    $("connectBtn").textContent=short(account);$("walletText").textContent=account;
+    const bal=await provider.getBalance(account);$("balanceText").textContent=`${formatUnits(bal,6)} USDC native gas`;
+    setStatus(`Connected ${short(account)} on Arc Testnet.`,"ok");
+  }catch(e){setStatus(e?.message||String(e),"err")}
+}
+
+$("connectBtn").addEventListener("click",connect);
+$("escrowAddress").value=contractAddress();
+$("saveContractBtn").addEventListener("click",()=>{const a=$("escrowAddress").value.trim();if(!/^0x[a-fA-F0-9]{40}$/.test(a)){setStatus("Invalid contract address.","err");return}localStorage.setItem("arcCreatorEscrow",a);setStatus(`Escrow saved: ${a}`,"ok")});
+
+$("createForm").addEventListener("submit",async(e)=>{
+  e.preventDefault();
+  try{
+    await ensureConnected();const escrow=requireContract();const data=new FormData(e.currentTarget);const creator=String(data.get("creator"));const amount=parseUnits(String(data.get("amount")),6);const days=Number(data.get("days"));const deadline=Math.floor(Date.now()/1000)+days*86400;const brief=String(data.get("brief"));
+    const usdc=new Contract(USDC,erc20Abi,signer);setStatus("1/2 Approving USDC…");const a=await usdc.approve(escrow,amount);await a.wait();
+    const c=new Contract(escrow,escrowAbi,signer);setStatus("2/2 Funding escrow…");const tx=await c.createJob(creator,amount,deadline,brief);const receipt=await tx.wait();
+    setStatus(`Job funded on Arc. Tx ${receipt.hash}`,"ok");
+  }catch(err){setStatus(err?.shortMessage||err?.message||String(err),"err")}
+});
+
+async function write(method,args,progress){try{await ensureConnected();const c=new Contract(requireContract(),escrowAbi,signer);setStatus(progress);const tx=await c[method](...args);await tx.wait();setStatus(`${method} confirmed · ${tx.hash}`,"ok")}catch(err){setStatus(err?.shortMessage||err?.message||String(err),"err")}}
+$("acceptBtn").addEventListener("click",()=>write("acceptJob",[BigInt($("creatorJobId").value)],"Accepting job…"));
+$("submitBtn").addEventListener("click",()=>write("submitWork",[BigInt($("creatorJobId").value),$("deliverable").value],"Submitting deliverable…"));
+$("approveBtn").addEventListener("click",()=>write("approveWork",[BigInt($("buyerJobId").value)],"Releasing USDC to creator…"));
+$("disputeCreatorBtn").addEventListener("click",()=>write("raiseDispute",[BigInt($("creatorJobId").value)],"Raising dispute…"));
+$("disputeBuyerBtn").addEventListener("click",()=>write("raiseDispute",[BigInt($("buyerJobId").value)],"Raising dispute…"));
+$("readBtn").addEventListener("click",async()=>{try{await ensureConnected();const c=new Contract(requireContract(),escrowAbi,provider);const id=BigInt($("buyerJobId").value);const j=await c.jobs(id);$("jobReadout").innerHTML=`<strong>Job #${id}</strong><span class="code">Buyer ${j.buyer}<br>Creator ${j.creator}<br>Budget ${formatUnits(j.amount,6)} USDC<br>Status ${STATUS_NAMES[Number(j.status)]||j.status}<br>Deliverable ${j.deliverableURI||"—"}</span>`;setStatus(`Loaded job #${id}.`,"ok")}catch(err){setStatus(err?.shortMessage||err?.message||String(err),"err")}});
+
+if(window.ethereum){window.ethereum.request({method:"eth_accounts"}).then(a=>{if(a?.length)connect()}).catch(()=>{});}
+</script>
+</body>
+</html>
