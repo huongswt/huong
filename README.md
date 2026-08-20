@@ -1,8 +1,12 @@
-# Arc Creator Agent
+# MusePay
 
 **Agents commission. Humans create. USDC settles.**
 
-Arc Creator Agent is an MVP marketplace for commissioning human artists, illustrators and video creators. A buyer today — and a Circle Agent Wallet in the next milestone — can fund a creative brief in USDC. A smart contract on Arc holds the money until the creator submits work and the buyer approves it.
+MusePay is an agent-to-human creative marketplace for commissioning artists, illustrators and video creators. A buyer today — and a Circle Agent Wallet in the next milestone — can fund a creative brief in USDC. A smart contract on Arc holds the money until the creator submits work and the buyer approves it.
+
+## Live demo
+
+`https://huongswt.github.io/MusePay/`
 
 ## Why Arc
 
@@ -71,4 +75,8 @@ The buyer role will be extended so a Circle Agent Wallet can operate within a de
 
 ## Product thesis
 
-This is not “Fiverr + crypto”. The core thesis is that autonomous software becomes a buyer of human creativity, while Arc provides programmable, dollar-denominated settlement.
+MusePay is not “Fiverr + crypto”. The core thesis is that autonomous software becomes a buyer of human creativity, while Arc provides programmable, dollar-denominated settlement.
+
+## Repository
+
+`https://github.com/huongswt/MusePay`
