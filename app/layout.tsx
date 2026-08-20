@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Arc Creator Agent",
-  description: "Agents commission. Humans create. USDC settles on Arc.",
+  title: "MusePay",
+  description: "Agents commission. Humans create. USDC settles.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
