@@ -1,8 +1,8 @@
 {
-  "name": "arc-creator-agent",
+  "name": "musepay",
   "version": "0.1.0",
   "private": true,
-  "description": "Agents commission. Humans create. USDC settles on Arc.",
+  "description": "Agents commission. Humans create. USDC settles.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
