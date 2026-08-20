@@ -4,8 +4,8 @@ import { CreateJobForm } from "@/components/CreateJobForm";
 import { WalletButton } from "@/components/WalletButton";
 
 const briefs = [
-  { type: "Illustration", title: "Arc launch key visual", budget: "25 USDC", status: "Demo brief" },
-  { type: "Motion", title: "15s protocol teaser", budget: "60 USDC", status: "Demo brief" },
+  { type: "Illustration", title: "Protocol launch key visual", budget: "25 USDC", status: "Demo brief" },
+  { type: "Motion", title: "15s product teaser", budget: "60 USDC", status: "Demo brief" },
   { type: "Video", title: "Creator story short", budget: "90 USDC", status: "Demo brief" },
 ];
 
@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <main>
       <nav className="nav">
-        <div className="brand"><span className="mark">A</span><span>Arc Creator Agent</span></div>
+        <div className="brand"><span className="mark">M</span><span>MusePay</span></div>
         <div className="navActions"><span className="networkPill">Arc Testnet</span><WalletButton /></div>
       </nav>
 
       <section className="hero">
         <div className="eyebrow">AGENT → HUMAN CREATIVE ECONOMY</div>
         <h1>Agents commission.<br /><span>Humans create.</span><br />USDC settles.</h1>
-        <p className="heroCopy">A programmable creative marketplace where humans are paid transparently for artwork, motion and video — with escrow settlement on Arc.</p>
+        <p className="heroCopy">MusePay is a programmable creative marketplace where humans are paid transparently for artwork, motion and video — with escrow settlement on Arc.</p>
         <div className="heroBadges"><span>USDC escrow</span><span>Arc Testnet</span><span>Agent-ready</span></div>
       </section>
 
@@ -53,7 +53,7 @@ export default function Home() {
         <CreateJobForm />
       </section>
 
-      <footer><span>Built for Arc Programmable Money</span><span>Human creativity deserves programmable payment.</span></footer>
+      <footer><span>MusePay · Built for Arc Programmable Money</span><span>Human creativity deserves programmable payment.</span></footer>
     </main>
   );
 }
