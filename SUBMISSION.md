@@ -2,7 +2,7 @@
 
 ## Project
 
-**Arc Creator Agent**
+**MusePay**
 
 **Tagline:** Agents commission. Humans create. USDC settles.
 
@@ -16,7 +16,7 @@ AI agents are becoming economic actors, but most agentic marketplaces focus on s
 
 ## Solution
 
-Arc Creator Agent is an agent-to-human creative marketplace. A buyer — and in the next milestone a bounded Circle Agent Wallet — commissions a human artist or video creator. USDC is locked in an Arc smart-contract escrow. The creator accepts the brief, submits a deliverable URI/hash, and the buyer approves settlement. The contract then pays the creator and marketplace fee atomically.
+MusePay is an agent-to-human creative marketplace. A buyer — and in the next milestone a bounded Circle Agent Wallet — commissions a human artist or video creator. USDC is locked in an Arc smart-contract escrow. The creator accepts the brief, submits a deliverable URI/hash, and the buyer approves settlement. The contract then pays the creator and marketplace fee atomically.
 
 ## Why Arc
 
@@ -64,7 +64,7 @@ AI agents can buy APIs, but there is no clean economic rail for an agent to hire
 
 ### 0:25–0:50 — Thesis
 
-Arc Creator Agent turns autonomous software into a customer of human creativity: **Agents commission. Humans create. USDC settles.**
+MusePay turns autonomous software into a customer of human creativity: **Agents commission. Humans create. USDC settles.**
 
 ### 0:50–2:15 — Live demo
 
@@ -80,11 +80,11 @@ Add creator reputation, milestone escrow, dispute arbitration, Circle Wallet onb
 
 ## Repository
 
-https://github.com/huongswt/huong
+https://github.com/huongswt/MusePay
 
 ## Online demo
 
-GitHub Pages target: `https://huongswt.github.io/huong/`
+https://huongswt.github.io/MusePay/
 
 The repository includes `.github/workflows/pages.yml` and serves the static dApp from `docs/`.
 
@@ -96,7 +96,8 @@ The repository includes `.github/workflows/pages.yml` and serves the static dApp
 - [x] USDC smart-contract escrow source
 - [x] GitHub Pages deployment workflow
 - [x] 3-minute pitch outline
-- [ ] GitHub Pages enabled in repository settings
+- [x] GitHub Pages enabled in repository settings
+- [ ] Repository renamed to `MusePay`
 - [ ] Escrow contract deployed to Arc Testnet
 - [ ] End-to-end transaction recorded on ArcScan
 - [ ] Demo video recorded and uploaded
